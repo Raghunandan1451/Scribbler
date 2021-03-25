@@ -1,0 +1,66 @@
+#signUpModal, #signInModal {
+	font-family: 'Flamenco';
+	font-size: 1.3em;
+}
+.modal-title {
+	font-weight: bolder;
+}
+.mod-foot {
+	display: block;
+	text-align: center;
+	font-family: 'Lexend';
+	font-weight: 800;
+	font-size: 0.7em;
+}
+
+.logo-container {
+	position: absolute;
+	top: 1vh;
+	left: 1vw;
+	color: #ff7f00;
+	background-color: transparent;
+}
+#logo-title {
+	color: #ff7f00;
+	font-size: 2.5em;
+}
+.logo-container a {
+	text-decoration: none;
+	font-family: 'Satisfy';
+}
+.logo-container p {
+	margin-top: 0;
+	font-size: 1.2em;
+	font-family: 'Marck Script';
+}
+
+.signButtons {
+	position: absolute;
+	top: 1vh;
+	right: 1vw;
+}
+
+#signInButton, #signUpButton {
+	background-color: #ff7f55;
+	color: #ffffff;
+}
+button {
+	padding: 0.5em 1em;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	font-family: 'Lexend';
+}
+button:hover {
+	cursor: pointer;
+}
+
+.postButtons {
+	position: absolute;
+	top: 50vh;
+	left: 45vw;
+}
+#posts, #createPosts {
+	background-color: #4f5f6f;
+	color: #f1a20f;
+}

@@ -1,0 +1,24 @@
+body {
+	background: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#createPostModal {
+	font-family: 'Flamenco';
+	font-size: 1.3em;
+}
+#createPostModal .modal-content {
+	position: absolute;
+	left: -15vw;
+	width: 170%;
+}
+#createPostModal .modal-footer button {
+	width: 20%;
+}
+
+textarea {
+	resize: none;
+}
