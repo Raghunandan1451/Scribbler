@@ -44,12 +44,12 @@ body {
 
 .post-author-content {
 	height: inherit; 
-    background-color: #DCDCDC;
-    width: 83%;
-    padding: 5px;
-    font-size: 14px;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
+	background-color: #DCDCDC;
+	width: 83%;
+	padding: 5px;
+	font-size: 14px;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 
 .card-body-heading{
@@ -62,34 +62,40 @@ body {
 	padding-bottom: 5px;
 }
 .trash-button{
-    float: right;
-    padding-right: 10px;
-    size: 10px;
-    cursor: pointer;
+	float: right;
+	padding-right: 10px;
+	size: 10px;
+	cursor: pointer;
 }
 
 .post-text{
-    overflow: hidden; 
-    white-space: normal; 
-    height: 4.8em;
+	overflow: hidden; 
+	white-space: normal; 
+	height: 4.8em;
 	font-size: 1em;
-    text-overflow: -o-ellipsis-lastline; 
 }
 
 .fa-ellipsis{
 	margin-left: 370px;
-	color: grey;
+	color: #777;
 	cursor: pointer;
 	padding-right: 120px;
-	margin-bottom: 4px; 
 }
 
+#btnConfirm, #btnCancel {
+	padding: 0.2em 1em;
+}
+.modal-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 .animate {
 	animation: drop 1s ease forwards;
 }
 
 @keyframes drop {
 	0% {opacity: 0}
-	70% { transform: translateY(350px);}
-	100% { transform: translateY(300px); opacity: 1;}
+	70% { transform: translateY(300px);}
+	100% { transform: translateY(250px); opacity: 1;}
 }

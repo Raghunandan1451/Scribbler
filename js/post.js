@@ -4,33 +4,29 @@ let num = 0
 
 let _head = document.querySelector('#title-edit')
 let _text = document.querySelector('#content-edit')
+document.querySelector('textarea').focus()
 
 const onEdit = () => {
 	num += 1
 	if (!editMode) {
-		_head.style.borderWidth = '2px'
-		_head.style.borderStyle = 'solid'
-		_head.style.borderColor = 'red'
+		_head.style.border = '1px solid #ff8c00'
+		_text.style.border = '2px solid #aaa'
 
-		_text.style.borderWidth = '2px'
-		_text.style.borderStyle = 'solid'
-		_text.style.borderColor = 'red'
-
-		document.getElementById('edit-button').innerHTML = 'Save<i class="fa fa-save" style="padding-left: 4px"></i></button>'
+		document.querySelector('#edit-button').innerHTML = 'Save<i class="fa fa-save" style="padding-left: 4px"></i></button>'
 		editMode = true
 	} else {
 		if (num === 2) {
 			var temp = _head
-			_head.innerHTML = `<span>UPDATED:</span>${temp.innerHTML}`
+			_head.innerHTML = `${temp.innerHTML}`
 
 			var temp = _text
-			_text.innerHTML = `<div>UPDATED:</div>${temp.innerHTML}`
+			_text.innerHTML = `${temp.innerHTML}`
 		}
 
 		_text.style.border = 'none'
 		_head.style.border = 'none'
 
-		document.querySelector('#edit-button').innerHTML = 'Edit<i class="fa fa-edit" style="padding-left: 4px"></i>'
+		document.querySelector('#edit-button').innerHTML = 'Edit<i class="fa fa-edit"></i>'
 		document.querySelector('#edit-button').disabled = true
 	}
 }
@@ -73,7 +69,7 @@ const comments = []
 const addingComment = (item) => {
 	const temp = document.getElementById('comments').innerHTML
 	document.getElementById('comments').innerHTML = `<div class="comment">${item}</div>`
-	document.getElementById('comments').innerHTML += `${temp}</br>`
+	document.getElementById('comments').innerHTML += `${temp}`
 	comments.pop()
 }
 

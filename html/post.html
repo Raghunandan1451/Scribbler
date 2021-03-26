@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script|Satisfy|Lexend|Flamenco">
 
-	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="../css/post.css">
 	<link rel="stylesheet" href="../css/header.css">
@@ -17,7 +17,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Sign Up</h4>
+					<h4 class="modal-title" style="font-size: 2em;margin-left: 25%;">Get Started</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
@@ -53,7 +53,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Sign In</h4>
+					<h4 class="modal-title" style="font-size: 2em;margin-left: 25%;">Welcome Back!</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
 				<div class="modal-body">
@@ -96,7 +96,7 @@
 			<div class="author-name"></div>
 			<div>
 				<button id="edit-button" type="button" class="btn btn-danger" onclick="onEdit()">Edit
-					<i class="fa fa-edit" style="padding-left: 5px;"></i>
+					<i class="fa fa-edit"></i>
 				</button>
 			</div>
 		</div>
@@ -105,7 +105,10 @@
 		<div class="post-content" id="content-edit" contenteditable="true">
 		</div>
 
-		<button id="like-button" type="button" class="btn btn-danger" onclick="countLikes()"><i class="fa fa-thumbs-up"></i><span id="likeButton">Like</span></button>
+		<button id="like-button" type="button" class="btn btn-danger" onclick="countLikes()">
+			<i class="fa fa-thumbs-up"></i>
+			<span id="likeButton">Like</span>
+		</button>
 		<div id="showCount">Be the first one to like this</div>
 
 		<textarea id="comment" rows="4" cols="135" placeholder="Leave a comment..." name="comment"></textarea>
@@ -123,9 +126,9 @@
 	</div>
 
 
-	<script src="../js/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="../js/bootstrap.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	<script src="../js/header.js"></script>
 	<script src="../js/post.js"></script>
