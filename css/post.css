@@ -1,0 +1,96 @@
+body {
+	background-image: linear-gradient(to bottom right, #06a1a1, #1cb2bd, #08cad1, #0de6c9, #1eaaff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+.heading-content{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.contain-post {
+	margin-top: 7em;
+	background-image: linear-gradient(to top left, #920ca3, #b007f3, #3513ce, #1c29e0, #712bf3);
+}
+.author{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
+.author-name{
+	font-family: 'Flamenco';
+	font-weight: bold;
+	font-size: 20px;
+	width: 50%;
+}
+
+#comments{
+	background-color: #aa6eeb;
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+}
+
+.comment{
+	background-color: #999;
+	margin: 10px;
+	padding: 10px;
+}
+
+#edit-button{
+	margin-left: 500px;
+	float: right;
+	height: 40px;
+	width: 100px;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.post-content{
+	word-wrap: break-word;
+	margin-top: 20px;
+}
+
+#like-button{
+	margin: 20px 10px;
+	padding: 5px 20px;
+	border-radius: 2px;
+}
+
+#comment-button{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	width: 120px;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+#showCount{
+	margin-bottom: 30px;
+
+}
+
+#allCommentsHeading{
+	font-weight: bolder;
+	padding-top: 10px;
+}
+
+.comment-container{
+	min-height: 0px;
+	overflow: hidden;
+}
+
+textarea {
+	background-color: #aa6eeb;
+	resize: none;
+	color: #444;
+	outline: none;
+	border: 0 solid transparent;
+}

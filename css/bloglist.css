@@ -84,7 +84,7 @@ body {
 	margin-bottom: 4px; 
 }
 
-.modal {
+.animate {
 	animation: drop 1s ease forwards;
 }
 
